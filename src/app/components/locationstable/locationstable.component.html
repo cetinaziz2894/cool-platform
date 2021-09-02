@@ -11,12 +11,12 @@
         </ng-container>
 
         <ng-container matColumnDef="licences">
-        <th mat-header-cell *matHeaderCellDef> Licences </th>
+        <th mat-header-cell *matHeaderCellDef>Licences</th>
         <td mat-cell *matCellDef="let element"> {{element.licences}} </td>
         </ng-container>
 
         <ng-container matColumnDef="products">
-            <th mat-header-cell *matHeaderCellDef> Products </th>
+            <th mat-header-cell *matHeaderCellDef>Products</th>
             <td mat-cell *matCellDef="let element">
                 <div class="products">
                     <img  *ngIf="element.products.monitoring" width="48px" height="48px" src="../../../assets/img/monitoring.png" alt={{element.name}}>
