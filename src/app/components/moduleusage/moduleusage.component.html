@@ -1,0 +1,29 @@
+<div class="title">
+    <h3>Module usage</h3>
+</div>
+<div class="modules" *ngIf="modelUsageSource">
+    <div class="module">
+        <img width="60px" height="60px"  src="../../../assets/img/exams.png" alt="exams">
+        <div class="progressbar-div">
+            <mat-progress-bar mode="determinate" value={{exams}} [color]="updateColor(exams)"></mat-progress-bar>
+            <p>Exams</p>
+        </div>
+        <p>{{exams}} %</p>
+    </div>
+    <div class="module">
+        <img width="60px" height="60px"  src="../../../assets/img/monitoring.png" alt="monitoring">
+        <div class="progressbar-div">
+            <mat-progress-bar mode="determinate" value={{monitoring}} [color]="updateColor(monitoring)"></mat-progress-bar>
+            <p>Monitoring</p>
+        </div>
+        <p>{{monitoring}} %</p>
+    </div>
+    <div class="module">
+        <img width="60px" height="60px"  src="../../../assets/img/application_library.png" alt="applicationLibrary">
+        <div class="progressbar-div">
+            <mat-progress-bar mode="determinate" value={{applicationLibrary}} [color]="updateColor(applicationLibrary)"></mat-progress-bar>
+            <p>Application Library</p>
+        </div>
+        <p>{{applicationLibrary}} %</p>
+    </div>
+</div>

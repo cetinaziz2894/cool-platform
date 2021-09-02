@@ -1,0 +1,81 @@
+<div>
+    <div class="add-title">
+      <h2 class="primary">Add Location</h2>
+    </div>
+    <div>
+      <form [formGroup]="locationForm" (change)="formChanged()">
+        <mat-grid-list cols="2" [cols]="breakpoint" rowHeight="85px" (window:resize)="onResize($event)">
+          <mat-grid-tile>
+            <div class="text-inside">
+              <mat-form-field>
+                <input matInput placeholder="Branch Name" value={{branchName}} formControlName="branchName" required>
+                <mat-error *ngIf="locationForm.controls.branchName.hasError('required')">
+                  Please enter branch name
+                </mat-error>
+                <mat-error *ngIf="locationForm.controls.branchName.hasError('pattern')">
+                  Please enter valid branch name
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div class="text-inside">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Licences Number" value={{licencesNumber}} formControlName="licencesNumber" required>
+                <mat-error *ngIf="locationForm.controls.licencesNumber.hasError('required')">
+                  Please enter licences number
+                </mat-error>
+                <mat-error *ngIf="locationForm.controls.licencesNumber.hasError('pattern')">
+                  Please enter valid licences number
+                </mat-error>
+              </mat-form-field>
+            </div>
+          </mat-grid-tile>
+      
+          <mat-grid-tile>
+            <div class="text-inside">
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker1" placeholder="Enrolment Date" value={{enrolmentDate}} formControlName="enrolmentDate">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </mat-grid-tile>
+
+          <mat-grid-tile>
+            <div class="text-inside">
+                <!-- Display files names -->
+                <span>{{fileAttr}}</span>
+                <!-- Browse Button -->
+                <button mat-flat-button color="primary"  class="upload-button">
+                  Browse File
+                  <input type="file" #fileInput id="uploadFile" (change)="uploadFileEvt($event)" name="uploadFile"
+                  accept="image/*" />
+                </button>
+          
+              <!-- Fetch selected filed on change -->
+            </div>
+          </mat-grid-tile>
+
+          <mat-grid-tile class="checkboxes">
+            <div class="text-inside checkbox">
+              <h4>Modules:</h4>
+              <section class="example-section" [formGroup]="modules">
+                <p><mat-checkbox formControlName="exams">Exams</mat-checkbox></p>
+                <p><mat-checkbox formControlName="monitoring">Monitoring</mat-checkbox></p>
+                <p><mat-checkbox formControlName="application_library">
+                  Application Library</mat-checkbox></p>
+              </section>
+            </div>
+          </mat-grid-tile>
+        </mat-grid-list>
+  
+        <div class="btn-sec">
+          <button mat-raised-button type="submit" color="primary" class="update-btn" (click)="saveLocation()">Save</button>
+          <button mat-raised-button type="button" class="discard-btn" (click)="openDialog()">Cancel</button>
+        </div>
+  
+      </form>
+    </div>
+  </div>
+  

@@ -1,0 +1,37 @@
+<div class="card">
+    <table mat-table [dataSource]="locationsSource">
+        <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef> Location </th>
+        <td mat-cell *matCellDef="let element">
+            <div class="location">
+                <img width="32px" height="32px"   src={{element.image}} alt={{element.name}}> 
+                <p>{{element.name}}</p>
+            </div>
+        </td>
+        </ng-container>
+
+        <ng-container matColumnDef="licences">
+        <th mat-header-cell *matHeaderCellDef> Licences </th>
+        <td mat-cell *matCellDef="let element"> {{element.licences}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="products">
+            <th mat-header-cell *matHeaderCellDef> Products </th>
+            <td mat-cell *matCellDef="let element">
+                <div class="products">
+                    <img  *ngIf="element.products.monitoring" width="48px" height="48px" src="../../../assets/img/monitoring.png" alt={{element.name}}>
+                    <img  *ngIf="element.products.exams" width="48px" height="48px" src="../../../assets/img/exams.png"  alt={{element.name}}>
+                    <img *ngIf="element.products.applicationLibrary"  width="48px" height="48px"   src="../../../assets/img/application_library.png" alt={{element.name}}>
+                </div>
+            </td>
+            </ng-container>
+
+        <ng-container matColumnDef="enrollmentDate">
+        <th mat-header-cell *matHeaderCellDef> Enrollment date </th>
+        <td mat-cell *matCellDef="let element"> {{element.enrollmentDate  * 1000 | date}} </td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</div>

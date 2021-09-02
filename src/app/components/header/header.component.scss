@@ -1,0 +1,193 @@
+@import "../../../assets/shared/variables";
+
+:host-context {
+    width: inherit;
+    height: inherit;
+
+    @media #{$mobile} {
+        margin: 0px;
+        padding: 0 0px;
+    }
+
+    @media #{$tablet} {
+        margin: 16px;
+        padding: 0 16px;
+    }
+}
+
+.mat-grid-list{
+    height: 100px !important;
+    @media #{$mobile} {
+        margin-top: 0px;
+    }
+
+    @media #{$tablet} {
+        margin-top: 16px;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+
+    @media #{$mobile} {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @media #{$tablet} {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+mat-grid-tile {
+    text-align: left;
+    align-items: center;
+    justify-items: start;
+    top: 10px;
+    @media #{$mobile} {
+        position: relative;
+        width: 100% !important;
+        left: 10px !important;
+        height: 64px !important;
+    }
+
+    @media #{$tablet} {
+        position: relative;
+        width: 100% !important;
+        left: 10px !important;
+        height: 64px !important;
+    }
+}
+
+
+mat-grid-tile .mat-grid-tile-content{
+    justify-content: start;
+    display: grid;
+    
+    .header-title{
+        margin: 15px;
+        @media #{$mobile} {
+            margin-top:0px;
+            margin-bottom: 0px;
+            width: 90%;
+            margin-left: 0px;
+        }
+    
+        @media #{$tablet} {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        h4{
+            @media #{$mobile} {
+                font-size: 10px;
+            }  
+        }
+    }
+}
+
+mat-grid-tile .mat-grid-tile-content h2{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    padding: 0px 0px;
+    font-size: 32px;
+    @media #{$mobile} {
+        padding: 0px 0px;
+        font-size: 24px;
+    }
+
+    @media #{$tablet} {
+        padding: 0px 0px;
+        font-size: 28px;
+    }
+}
+
+
+
+mat-grid-tile .mat-grid-tile-content h4{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;  
+    color: base-color('text-gray');
+
+    @media #{$mobile} {
+        padding: 2px 0px;
+        font-size: 12px;
+    }
+
+    @media #{$tablet} {
+        padding: 2px 0px;
+        font-size: 12px;
+    }
+}
+
+mat-grid-tile .mat-grid-tile-content-profile{
+    justify-content: center;
+    display: flex;
+
+    @media #{$mobile}{
+        justify-content: flex-end;
+    }
+
+    @media #{$tablet}{
+        justify-content: flex-end;
+    }
+}
+
+mat-grid-tile .mat-grid-tile-content .profile-info-section{
+    display: flex;
+    height: inherit;
+    align-items: center;
+}
+
+mat-grid-tile .mat-grid-tile-content .profile-info-section .icon{
+    color:#E5E5E5;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+mat-grid-tile .mat-grid-tile-content .profile-info-section .mat-card{
+    box-shadow: none;
+    padding: 0px;
+}
+
+mat-grid-tile .mat-grid-tile-content .profile-info-section .mat-card .mat-card-header{
+    align-items: center;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+}
+
+mat-grid-tile .mat-grid-tile-content .profile-info-section .mat-card .name{
+    margin-bottom: 0px;
+    @media #{$mobile} {
+        font-size: 16px;
+    }
+
+    @media #{$tablet} {
+        font-size: 16px;
+    }
+}
+
+mat-grid-tile .mat-grid-tile-content .profile-info-section .mat-card .title{
+    margin-bottom: 0px;
+    @media #{$mobile} {
+        font-size: 12px;
+    }
+
+    @media #{$tablet} {
+        font-size: 12px;
+    }
+}
+
+.header-title .icon{
+    background: #FFC145;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}

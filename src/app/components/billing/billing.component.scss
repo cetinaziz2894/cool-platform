@@ -1,0 +1,79 @@
+@import "../../../assets/shared/variables";
+
+.billing-card{
+
+    font-family: Quicksand;
+    font-style: normal;
+    color: base-color('text-primary');
+    margin: 15px 10px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 28px;
+    padding: 0 20px;
+    overflow: scroll;
+
+    .table-div{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        .mat-table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            display: table;
+            border-collapse: collapse;
+            margin: 0px;
+            padding: 10px 10px;
+        }
+        .mat-row,
+        .mat-header-row {
+            display: table-row;
+        }
+        .mat-cell,
+        .mat-header-cell {
+            word-wrap: initial;
+            display: table-cell;
+            padding: 0px 5px;
+            line-break: unset;
+            width: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+        .text-gray{
+          color: base-color('text-gray');
+        }
+    }
+}
+
+table{
+    font-family: Quicksand;
+    color: base-color('text-gray');
+    font-style: normal;
+    font-weight: 300;
+    border-bottom:0px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    
+}
+table {
+    width: 100%;
+    border-spacing: 0 8px !important;
+    overflow: auto;
+    height: 100px;
+    max-height: 100px;
+  }
+
+  

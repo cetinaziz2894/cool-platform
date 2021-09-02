@@ -1,0 +1,81 @@
+@import "../../../assets/shared/variables";
+
+mat-form-field {
+    width: 90%;
+  }
+  .btn-sec {
+    margin-right: 5rem !important;
+    text-align: right;
+    margin-top: 1.5em;
+    
+    @media #{$mobile} {
+      margin-right: 1rem !important;
+    }
+    
+  }
+  .update-btn {
+    margin: 5px;
+  }
+  .discard-btn {
+    margin: 5px;
+  }
+  .text-inside {
+    position: absolute;
+    left: 5px;
+    width: 100%;
+  }
+
+  
+  #uploadFile {
+    top: 0px;
+    left: 0px;
+    width: 100%;    
+    z-index: 9;
+    opacity: 0;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .upload-button{
+    margin-left: 10px;
+  }
+
+  .checkboxes{
+    width: 100% !important;
+    .text-inside {
+      height: 85px;
+    }
+
+  .example-section {
+    display: flex !important;
+    flex-direction: row !important;
+
+    > p{
+      margin-left: 10px;
+    }
+
+    @media #{$mobile} {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+  }
+
+  .checkbox{
+
+    h4 {
+      @media #{$mobile} {
+        margin-bottom: 0px;
+      }
+    }
+    
+    section{
+      p{
+        @media #{$mobile} {
+          margin-bottom: 0px;
+          height: 20px;
+        }
+        }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<mat-grid-list cols="6" rowHeight="74px">
+    <div class="header">
+        <mat-grid-tile
+            [colspan]="4"
+            [rowspan]="1">
+            <div class="mat-grid-tile-content-header mat-grid-tile-content">
+                <div class="header-title">
+                    <h2>{{headerInfo?.title}} 
+                        <mat-icon  class="icon" aria-hidden="false" aria-label="add Location" (click)="openDialog()">add</mat-icon>
+                    </h2>
+                    <h4>{{headerInfo?.description}}</h4>     
+                </div>
+                </div>
+        </mat-grid-tile>
+        <mat-grid-tile
+            [colspan]="2"
+            [rowspan]="1">
+            <div class="mat-grid-tile-content-profile mat-grid-tile-content">
+                <div class="profile-info-section">
+                    <mat-icon 
+                        [matBadge]="badgeMessageContent" 
+                        matBadgeColor="warn"
+                        matBadgeSize="small" 
+                        class="icon"
+                        >
+                        email
+                    </mat-icon>
+                    <mat-icon 
+                        [matBadge]="badgeNotificationContent" 
+                        matBadgeColor="warn" 
+                        matBadgeSize="small"
+                        class="icon"
+                        >
+                        notifications
+                    </mat-icon>
+                    <mat-card>
+                        <mat-card-header>
+                          <div mat-card-avatar [ngStyle]="{'background': 'url(' + backgroundUrl + ') no-repeat 0 0 / cover'}" ></div>
+                          <mat-card-title class="name">Andrew</mat-card-title>
+                          <mat-card-subtitle class="title">Admin account</mat-card-subtitle>
+                        </mat-card-header>
+                      </mat-card>
+                </div>
+            </div>
+        </mat-grid-tile>
+    </div>
+  </mat-grid-list>

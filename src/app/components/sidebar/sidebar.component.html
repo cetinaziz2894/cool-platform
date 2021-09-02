@@ -1,0 +1,35 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+        <div class="sidebar">
+            <img class="logo" src="../../../assets/img/cool-logo.png" />
+            <button mat-button class="menu-button" (click)="goTo('overview')" [ngClass]="isThisPage('overview')">
+                <mat-icon>trending_up</mat-icon>
+                <span>Overview</span>
+            </button>
+            <button mat-button class="menu-button" (click)="goTo('locations')" [ngClass]="isThisPage('locations')"> 
+                <mat-icon>list</mat-icon>
+                <span>Location</span>
+            </button>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="main">
+            <div class="header">
+                <mat-toolbar>
+                    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+                        <mat-icon *ngIf="!sidenav.opened">
+                            menu
+                        </mat-icon>
+                        <mat-icon *ngIf="sidenav.opened">
+                            close
+                        </mat-icon>
+                    </button>
+                    <app-header></app-header>
+                </mat-toolbar>
+            </div>
+            <div class="content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

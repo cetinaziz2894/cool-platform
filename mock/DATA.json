@@ -1,0 +1,219 @@
+{
+  "cards": {
+    "primaryCard": {
+      "bank": "cloudcash",
+      "type": "premium account",
+      "name": "Bobi Codeshake",
+      "number": "5798 **** **** 2847",
+      "expiry": "06/21",
+      "ccv": 928,
+      "active": true
+    },
+    "expense": {
+      "current": 350.6,
+      "limit": 4000
+    },
+    "balance": {
+      "current": 2850.75,
+      "credit": 1500.5,
+      "provisions": 350.6
+    }
+  },
+  "billing": [
+    {
+      "service": "Monitoring",
+      "type": "session",
+      "date": 1629197711,
+      "amount": 75.67
+    },
+    {
+      "service": "Exams",
+      "type": "session",
+      "date": 1629197711,
+      "amount": 75.67
+    },
+    {
+      "service": "Exams",
+      "type": "storage",
+      "date": 1629197711,
+      "amount": 75.67
+    },
+    {
+      "service": "Application Library",
+      "type": "month",
+      "date": 1629197711,
+      "amount": 75.67
+    },
+    {
+      "service": "Monitoring",
+      "type": "bandwidth",
+      "date": 1629197711,
+      "amount": 75.67
+    },
+    {
+      "service": "Application Library",
+      "type": "bandwidth",
+      "date": 1629197711,
+      "amount": 85.62
+    },
+    {
+      "service": "Exams",
+      "type": "bandwidth",
+      "date": 1629197711,
+      "amount": 173.27
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLUgTIqMRBLP2pKLmPhwwMn66gyLimAW6E7l-O2djXHmWl3Lk_7qDM2mtLvbTEDCynauHqayt7VCXotdr8PVDbZwXDW5GSeZrGQdqQVZHY__VvN6nQutx_oMqIWSNToD90JhttdpOAjZEkucHz9OC2Ti=w31-h23-no?authuser=0",
+      "licences": 350,
+      "name": "Atasehir",
+      "products": {
+        "monitoring": true,
+        "exams": true,
+        "applicationLibrary": true
+      },
+      "enrollmentDate": 1629198614
+    },
+    {
+      "id": 2,
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLVHQdTFvdbpIhBdAdvhXLsKG4r4xRgyHmUOOua1eV8USPQRC4t_54XHQFoiHVpVHecr-QY5KTK-ua0A_Aj-sed4XwcOfDVEaSSs5jcATF74aNzmkCM9-RnR7Eqpe39mDxy08qy3GCJyEyhMuMJTh9XI=s24-no?authuser=0",
+      "licences": 350,
+      "name": "Sariyer",
+      "products": {
+        "monitoring": false,
+        "exams": true,
+        "applicationLibrary": true
+      },
+      "enrollmentDate": 1629198614
+    },
+    {
+      "id": 3,
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLXOvVy6gdFEYg8PNWNm5nqkVMUTRlETmF_0uERYwi7lngUumdsPI1749B4oceIlmWzv4WKxO9uvwHbspGJ0n6BVJnIxeervxZ-sNMDRbfWWji4kJP7-YIgaU7fly22t06t4iwiiCLSlG2z6YnsegVqO=w31-h26-no?authuser=0",
+      "licences": 350,
+      "name": "Bakirkoy",
+      "products": {
+        "monitoring": true,
+        "exams": true,
+        "applicationLibrary": true
+      },
+      "enrollmentDate": 1629198614
+    },
+    {
+      "id": 4,
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLVGbbLxQeQo_Dazvn_hWuWhImR_ns_GZH_eU_BkHsps-OTiq4qeQQDW1rWpXC1hV8B1wO9kFxZa5XA8x0XKTnIFu3bXl_WxG5nEjV5-YDxZaYuFzpGb6WWnsDZGcmZ7eOVIuOEPw_820ONx_g-i-GvK=w31-h23-no?authuser=0",
+      "licences": 350,
+      "name": "Besiktas",
+      "products": {
+        "monitoring": true,
+        "exams": true,
+        "applicationLibrary": false
+      },
+      "enrollmentDate": 1629198614
+    },
+    {
+      "id": 5,
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLWaEOOeJM9tVSsrOJBERke4IakaYTjtjuTZYsHQlqRfBJMFCfBkOCe00jZJNYbzMzjvBkoZ2_jJ9hFrWsSf8k9-advXf1MfnTnRpuu-KfsnqUhEzyyW5Bh0lonKBuk0TlhkYmPcXa-CC1q1QD2_pc1V=s24-no?authuser=0",
+      "licences": 350,
+      "name": "Kadikoy",
+      "products": {
+        "monitoring": true,
+        "exams": true,
+        "applicationLibrary": true
+      },
+      "enrollmentDate": 1629198614
+    },
+    {
+      "id": 6,
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLU7h0rjOOsLE4nHg-suge0V9XU5DWQwfkF-GyLNzQu6H_EUHTyzmkshdUGsJhHJdM7d2DJ63CRP1QHba73KD_5yDeY2DYcKyfm3J777peRTfxBfvCiTxpTGBxBozfJixVTZIOoGc0un-aOgN8vf15nV=w31-h26-no?authuser=0",
+      "licences": 350,
+      "name": "Maslak",
+      "products": {
+        "monitoring": false,
+        "exams": false,
+        "applicationLibrary": true
+      },
+      "enrollmentDate": 1629198614
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLU7h0rjOOsLE4nHg-suge0V9XU5DWQwfkF-GyLNzQu6H_EUHTyzmkshdUGsJhHJdM7d2DJ63CRP1QHba73KD_5yDeY2DYcKyfm3J777peRTfxBfvCiTxpTGBxBozfJixVTZIOoGc0un-aOgN8vf15nV=w31-h26-no?authuser=0",
+      "licences": "360",
+      "name": "Deneme",
+      "products": {
+        "applicationLibrary": true,
+        "exams": true,
+        "monitoring": true
+      },
+      "enrollmentDate": 1629752400,
+      "id": 7
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLU7h0rjOOsLE4nHg-suge0V9XU5DWQwfkF-GyLNzQu6H_EUHTyzmkshdUGsJhHJdM7d2DJ63CRP1QHba73KD_5yDeY2DYcKyfm3J777peRTfxBfvCiTxpTGBxBozfJixVTZIOoGc0un-aOgN8vf15nV=w31-h26-no?authuser=0",
+      "licences": "200",
+      "name": "Test",
+      "products": {
+        "applicationLibrary": true,
+        "exams": false,
+        "monitoring": true
+      },
+      "enrollmentDate": 1629234000,
+      "id": 8
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLU7h0rjOOsLE4nHg-suge0V9XU5DWQwfkF-GyLNzQu6H_EUHTyzmkshdUGsJhHJdM7d2DJ63CRP1QHba73KD_5yDeY2DYcKyfm3J777peRTfxBfvCiTxpTGBxBozfJixVTZIOoGc0un-aOgN8vf15nV=w31-h26-no?authuser=0",
+      "licences": "370",
+      "name": "Denemem",
+      "products": {
+        "applicationLibrary": true,
+        "exams": false,
+        "monitoring": true
+      },
+      "enrollmentDate": 1629147600,
+      "id": 9
+    },
+    {
+      "image": "https://lh3.googleusercontent.com/pw/AM-JKLU7h0rjOOsLE4nHg-suge0V9XU5DWQwfkF-GyLNzQu6H_EUHTyzmkshdUGsJhHJdM7d2DJ63CRP1QHba73KD_5yDeY2DYcKyfm3J777peRTfxBfvCiTxpTGBxBozfJixVTZIOoGc0un-aOgN8vf15nV=w31-h26-no?authuser=0",
+      "licences": "2",
+      "name": "asdsa",
+      "products": {
+        "applicationLibrary": true,
+        "exams": false,
+        "monitoring": true
+      },
+      "enrollmentDate": 1628802000,
+      "id": 10
+    }
+  ],
+  "usage": {
+    "exams": 70304,
+    "monitoring": 44616,
+    "applicationLibrary": 20280
+  },
+  "administrators": [
+    {
+      "image": "https://codeshake.io/wp-content/uploads/2019/04/DSC_1617-e1555593934650.jpg",
+      "name": "Onur Dincol"
+    },
+    {
+      "image": "https://codeshake.io/wp-content/uploads/2019/04/DSC_1637-e1555594031580.jpg",
+      "name": "Eren Eltutar"
+    },
+    {
+      "image": "https://codeshake.io/wp-content/uploads/2020/03/DSC_1737-1.jpg",
+      "name": "Onur Ozan Sahin"
+    },
+    {
+      "image": "https://codeshake.io/wp-content/uploads/2019/03/gijs.jpg",
+      "name": "Gijs Stijnman"
+    },
+    {
+      "image": "https://codeshake.io/wp-content/uploads/2019/03/gert-jan.jpg",
+      "name": "Gert-Jan van Popering"
+    },
+    {
+      "image": "https://codeshake.io/wp-content/uploads/2019/03/huig.jpg",
+      "name": "Huig Ouwehand"
+    }
+  ]
+}

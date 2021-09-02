@@ -1,0 +1,21 @@
+<mat-grid-list (window:resize)="onResize($event)" cols="4" rowHeight="750px">
+    <mat-grid-tile
+        [colspan]="colbreakpoint"
+        [rowspan]="1"
+    >
+    <div class="left-content">
+        <app-cards class="card"></app-cards>
+        <app-billing class="billing"></app-billing>
+    </div>
+        </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]="colbreakpoint"
+        [rowspan]="1"
+    >
+        <div class="right-content">
+            <app-locations></app-locations>
+            <app-moduleusage></app-moduleusage>
+            <app-administrators></app-administrators>
+        </div>
+    </mat-grid-tile>
+  </mat-grid-list>

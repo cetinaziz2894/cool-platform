@@ -1,0 +1,123 @@
+@import "../../../assets/shared/variables";
+
+:host-context {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.credit-card{
+    height: 100%;
+}
+
+mat-grid-list{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 28px;
+    margin: auto 10px;
+    width: 100%;
+    padding-bottom: 0px !important;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    justify-items: center;
+
+    @media #{$mobile} {
+        margin: auto 0px;
+     }
+}
+
+mat-grid-tile {
+    color: base-color('text-gray');
+    width: 100%;
+    display: flex;
+    height: 100%;
+    top: 0px !important;
+    padding-top: 0px !important;
+
+    @media #{$mobile} {
+        width: 100% !important;
+        margin-top: 0px !important;
+     }
+}
+
+.card-right-info {
+    height: 100%;
+    width: 100%;
+    margin: 15px 15px;
+}
+
+.card-right-info .info{
+    height: 65%;
+    border-left: 1px solid #E8E8E8;
+    margin-top: 60px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+
+    @media #{$mobile} {
+        border-left: none;
+        margin-top: calc(100%);
+     }
+}
+
+.card-right-info .info .content{
+    padding-left: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    
+    @media #{$mobile} {
+        flex-direction: row;
+        height: max-content;
+     }
+
+    > div > p {
+        margin-bottom: 0px;
+    }
+
+    .text{
+        font-size: 10px;
+    }
+
+    .first .value {
+        color:base-color('primary');
+        font-size: 20px;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .second .value {
+        color: #439A86;;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .third .value {
+        color: #BB4430;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: bold;
+    }
+}
+
+.button{
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 25%;
+    > p {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,44 @@
+
+$base-colors: (
+    'primary': #197BBD, 
+    'accent': #d98328,
+    'secondary': #5a1321,
+    'foreground': #191919,
+    'background': #67676730,
+    'hover':#F0F7FF,
+    'text-primary':#404040,
+    'text-gray':#AEAEAE,
+  );
+
+$mobile: "(max-width: 800px)";
+$tablet: "(min-width: 800px) and (max-width: 1023px)";
+$desktop: "(min-width: 1024px)";
+  
+  @function base-color($key: 'background') {
+    @return map-get($base-colors, $key);
+  }
+  @function base-color($key: 'accent') {
+    @return map-get($base-colors, $key);
+  }
+  @function base-color($key: 'primary') {
+    @return map-get($base-colors, $key);
+  }
+  @function base-color($key: 'secondary') {
+    @return map-get($base-colors, $key);
+  }
+  @function base-color($key: 'foreground') {
+    @return map-get($base-colors, $key);
+  }
+  
+  @function base-color($key: 'hover') {
+    @return map-get($base-colors, $key);
+  }
+  
+  @function base-color($key: 'text-gray') {
+    @return map-get($base-colors, $key);
+  }
+
+  @function base-color($key: 'text-primary') {
+    @return map-get($base-colors, $key);
+  }
+  

@@ -1,0 +1,214 @@
+@import "../../../assets/shared/variables";
+
+:host-context{
+    height: 33%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+
+    @media #{$mobile} {
+        flex-direction: column;
+    }
+    
+    .administrators{
+        width: 90%;
+        margin-right: 15px;
+    }
+
+    .contact{
+        background: linear-gradient(180deg, #ED654C 0%, #D05842 100%);
+        border-radius: 20px;
+        width: 150px;
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-bottom: 15px;
+        align-items: flex-end;
+
+        @media #{$mobile} {
+            margin-top: calc(6%);
+            justify-content: center;
+            width: 100%;
+            height: 15px;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 0px;
+            margin-top: 25px;
+        }
+
+        > p {
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20.1118px;
+            line-height: 25px;
+            color: #FFFFFF;
+            margin-bottom: 0px;
+            padding-left: 15px;
+
+            @media #{$mobile} {
+                height: 100%;
+            }
+
+        }
+
+        > span {
+            @media #{$mobile} {
+                height: 100%;
+            }
+        }
+
+        .mat-icon{
+            color: white;
+
+            @media #{$mobile} {
+                height: 100%;
+            }
+        }
+
+    }
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    h3{
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom:0px;
+    }
+}
+
+.slides{
+    display: flex;
+    text-align: center;
+    .next{
+        margin-top: calc(6%);
+        height: 24px;
+        width: 24px;
+        background: #FFC145;
+        border-radius: 50%;
+        cursor: pointer;
+
+        @media #{$mobile} {
+            margin-top: calc(6%);
+        }
+    
+        @media #{$tablet} {
+            margin-top: calc(6%);
+        }
+    }
+
+    .prev{
+        margin-top: calc(6%);
+        height: 24px;
+        width: 24px;
+        background: #FFC145;
+        border-radius: 50%;
+        cursor: pointer;
+
+        @media #{$mobile} {
+            margin-top: calc(6%);
+        }
+    
+        @media #{$tablet} {
+            margin-top: calc(6%);
+        }
+    }
+
+
+
+}
+
+.slides .slide{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    width: 100%;
+    height: 100%;
+    .image{
+        margin: 0px 5px;
+        text-align: center;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #404040;
+        width: auto;
+        height: fit-content;
+        @media #{$mobile} {
+            margin: 0px 0px;
+        }
+        >p {
+            margin-bottom: 0px;
+        }
+
+        > .mat-card-avatar {
+            width: 90%;
+            height: 90%;
+
+            @media #{$mobile} {
+                width: 45px;
+                height: 45px;
+            }
+        }
+            
+    }
+}
+
+.example-form-field {
+    width: 200px;
+  }
+
+.notice-me {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    form{
+        height:58px;
+        width: 100%;
+        margin-right:10px;
+        mat-form-field{
+            width: inherit;
+        }
+    }
+
+    > input {
+        background: #FFFFFF;
+        height: 36px;
+        border: 1px solid #197BBD;
+        box-sizing: border-box;
+        border-radius: 8px;
+        flex: 1;
+    }
+
+    @media #{$mobile} {
+      margin-top: 10px;
+    }
+}
+
+.mat-raised-button{
+    background: #FFC145;
+    border-radius: 13.617px;
+
+    .mat-button-wrappper{
+        margin-left: -5px;
+    }
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper{
+    margin-left: 0px;
+}

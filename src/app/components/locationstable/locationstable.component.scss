@@ -1,0 +1,103 @@
+@import "../../../assets/shared/variables";
+
+.card{
+
+    font-family: Quicksand;
+    font-style: normal;
+    color: base-color('text-primary');
+    margin: 15px 10px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 28px;
+    padding: 0 20px;
+    overflow: scroll;
+    @media #{$mobile} {
+      overflow: scroll;
+  }
+}
+
+table {
+    font-family: Quicksand;
+    color: base-color('text-gray');
+    font-style: normal;
+    font-weight: 300;
+    border-bottom:0px;
+    width: 100%;
+    border-spacing: 0 8px !important;
+    overflow: auto;
+    height: 100px;
+    max-height: 100px;
+  }
+
+  th.mat-header-cell {
+    border-bottom: 0px;
+    font-size:24px;
+    @media #{$mobile} {
+      font-size:15px;
+  }
+  }
+  
+  td.mat-cell {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    font-size:18px;
+    color: base-color('text-gray');
+    .location{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        justify-items: center;
+
+        img{
+            margin: 10px;
+        }
+        p{
+            display: contents; 
+            margin-left:10px; 
+        }
+    }
+
+    .products{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        justify-items: center;
+        img{
+            margin: 5px;
+        }
+    }
+  }
+  tr.mat-row, tr.mat-footer-row{
+    height: 75px;
+    border-bottom: 0px;
+    @media #{$mobile} {
+      height: 60px;
+  }
+  }
+
+  th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+    border-bottom-color: #efefef;
+    @media #{$mobile} {
+      padding-left: 10px !important;
+  }
+}
+
+  tr.mat-row, td.mat-cell{
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    border-bottom: 0px;
+    min-width: max-content;
+
+    @media #{$mobile} {
+      font-size: 13px;
+    }
+ 
+  }
+
+  tr.mat-header-row {
+    @media #{$mobile} {
+      height: 40px;
+  }
+}

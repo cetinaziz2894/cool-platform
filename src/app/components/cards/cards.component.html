@@ -1,0 +1,35 @@
+<mat-grid-list (window:resize)="onResize($event)" cols="5" rowHeight="2:1">
+    <mat-grid-tile
+        [colspan]="colbreakpoint"
+        [rowspan]="1"
+    >
+        <app-creditcard class="credit-card"></app-creditcard>
+    </mat-grid-tile>
+    <mat-grid-tile
+        [colspan]="colbreakpoint1"
+        [rowspan]="1"
+    >
+    <div class="card-right-info">
+        <div class="info" *ngIf="cardSource">
+            <div class="content">
+                <div class="first">
+                    <p class="value">$ {{cardSource?.balance.current}}</p>
+                    <p class="text">Current balance</p>
+                </div>
+                <div class="second">
+                    <p class="value">$ {{cardSource?.balance.credit}}</p>
+                    <p class="text">Credit balance</p>
+                </div>
+                <div class="third">
+                    <p class="value">$ {{cardSource?.balance.provisions}}5</p>
+                    <p class="text">Provisions balance</p>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <mat-slide-toggle></mat-slide-toggle>
+            <p>Deactivate card</p>
+        </div>
+    </div>
+    </mat-grid-tile>
+  </mat-grid-list>

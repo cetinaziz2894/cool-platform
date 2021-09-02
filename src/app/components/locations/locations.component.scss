@@ -1,0 +1,124 @@
+@import "../../../assets/shared/variables";
+
+:host-context{
+    height: 33%;
+    width: 100%;
+    margin-bottom: 15px;
+
+    @media #{$mobile} {
+       height: 20%;
+    }
+}
+.title{
+    display: flex;
+    flex-direction: row;
+
+    h3{
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0px;
+    }
+
+    .icon-div{
+        background: #FFC145;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    @media #{$mobile} {
+        padding: 20px 10px;
+    }
+
+    @media #{$tablet} {
+        padding: 10px 10px;
+    }
+}
+.locations-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 28px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+
+    @media #{$mobile} {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 15px;
+    }
+
+    >p{
+        padding-left: 20px;
+        margin-bottom: 0px;
+
+        @media #{$mobile} {
+            padding-left: 10px;
+        }
+    }
+
+    img{
+        padding: 10px 20px;
+        color: linear-gradient(180deg, #7CB4F9 0%, #6DA2E4 100%);
+        @media #{$mobile} {
+            padding: 5px 20px;
+        }
+    }
+
+    .value{
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23.9789px;
+        line-height: 29px;
+        color: #696969;
+        margin-bottom: 0px;
+        margin-top: 15px;
+
+        @media #{$mobile} {
+            margin-top: 5px;
+            font-size: 15px;
+            line-height: 10px;
+        }
+
+    }
+
+    .text{
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;        
+        color: #AEAEAE;
+
+        @media #{$mobile} {
+            font-size: 10px;
+        }
+    }
+    
+    .place{
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20.1118px;
+        line-height: 25px;
+        color: #404040;
+
+        @media #{$mobile} {
+            line-height: 10px;
+            font-size: 16px;
+        }
+    }
+}

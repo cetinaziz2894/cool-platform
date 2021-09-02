@@ -1,0 +1,14 @@
+<div class="title">
+    <h3>Locations</h3>
+    <div class="icon-div">
+        <mat-icon  class="icon" aria-hidden="false" aria-label="add Location" (click)="openDialog()">add</mat-icon>
+    </div>
+</div>
+<div class="locations-div">
+    <div class="card"  *ngFor="let location of locationSource">
+        <p class="value">{{location.licences}}</p>
+        <p class="text">Licences</p>
+        <img width="32px" height="32px"  src={{location.image}} alt={{location.name}}>
+        <p class="place">{{location.name}}</p>
+    </div>
+</div>

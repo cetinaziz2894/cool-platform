@@ -1,0 +1,29 @@
+<div class="card">
+    <h3 class="title">Cards</h3>
+    <div class="card-div" *ngIf="cardSource">
+        <div class="card-title">
+            <p class="name">{{cardSource?.primaryCard.bank}}</p>
+            <p class="type">{{cardSource?.primaryCard.type | uppercase}}</p>
+        </div>
+        <div class="card-number">
+            <p>{{cardSource?.primaryCard.number}}</p>
+        </div>
+        <div class="card-info">
+            <div class="card-personal-name">
+                <p class="text">Card holder</p>
+                <p class="value">{{cardSource?.primaryCard.name}}</p>
+            </div>
+            <div class="card-expire-date">
+                <p class="text">Expire date </p>
+                <p class="value">{{cardSource?.primaryCard.expiry}} </p>
+            </div>
+        </div>
+    </div>
+    <div class="progress-bar">
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+        <div class="progress-bar-text">
+            <span class="progress-bar-title">Expense Limit</span>
+            <span class="progress-bar-value">${{cardSource?.expense.current}} / $ {{cardSource?.expense.limit}}</span>
+        </div>
+    </div>
+</div>

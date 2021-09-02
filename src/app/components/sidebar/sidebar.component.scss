@@ -1,0 +1,139 @@
+@import "../../../assets/shared/variables";
+
+mat-toolbar {
+    background: white;
+    margin: 16px;
+    margin-bottom: 0px;
+    position: relative;
+    width: -webkit-fill-available;
+    height: auto;
+    border-top-right-radius: 60px;
+    color: #404040;
+    
+    @media #{$mobile} {
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        margin: 17px 17px 0px 17px;
+        height: 125px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    @media #{$tablet} {
+        border-radius: 10px !important;
+        margin: 17px;
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+}
+
+.mat-drawer-container{
+    background-color: inherit;
+}
+
+mat-sidenav {
+    margin: 16px;
+    width: 200px;
+    border-right: 1px solid #e4e4e4e5;
+    background: white;
+    color: 404040;
+    padding: 16px;
+    text-align: center;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+
+    @media #{$mobile} {
+        border-radius: 10px !important;
+    }
+
+    @media #{$tablet} {
+        border-radius: 10px !important;
+    }
+}
+
+.content {
+    height: calc(100vh - 132px);
+    display: flex;
+    @media #{$mobile} {
+        border-radius: 10px !important;
+        margin-left: 17px;
+        height: calc(100vh - 150px);
+    }
+
+    @media #{$tablet} {
+        border-radius: 10px !important;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: calc(100vh - 180px);
+    }
+}
+
+mat-sidenav-container {
+    height: 100%;
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    mat-icon {
+        margin-right: 8px;
+    }
+    color: base-color('text-gray');
+}
+
+.logo {
+    margin: 32px 0px;
+    width: 150px;
+    height: 100px;
+    background-color: base-color('primary');
+    border-radius: 10px;
+}
+
+.sidebar{
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+}
+
+mat-icon{
+    color: base-color('text-gray');
+}
+
+.mat-icon-button{
+    margin-top: 10px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @media #{$mobile} {
+        
+    }
+
+    @media #{$tablet} {
+        height: max-content;
+    }
+}
+
+.header{
+    display: flex;
+}
+
+
+.active-button{
+    background: #F0F7FF;
+    color: base-color('primary');
+
+    mat-icon{
+        color: base-color('primary');
+    }
+}
