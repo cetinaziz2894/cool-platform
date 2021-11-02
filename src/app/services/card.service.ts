@@ -3,12 +3,13 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Card } from '../models/Card';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CardService {
-  private cardsUrl = 'http://localhost:3001/cards';
+  private cardsUrl = environment.apiUrl+'cards';
   
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

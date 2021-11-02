@@ -3,12 +3,13 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Location } from '../models/Locations';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LocationsService {
-  private locationsUrl = 'http://localhost:3001/locations';
+  private locationsUrl = environment.apiUrl+'locations';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

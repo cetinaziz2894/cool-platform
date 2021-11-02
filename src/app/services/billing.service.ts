@@ -3,13 +3,14 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Billing } from '../models/Billing';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BillingService {
 
-  private billingUrl = 'http://localhost:3001/billing';
+  private billingUrl = environment.apiUrl+'billing';
   
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

@@ -3,6 +3,7 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { catchError, tap } from 'rxjs/operators';
 import { Administrator } from '../models/Administrator';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -10,7 +11,7 @@ import { Administrator } from '../models/Administrator';
 })
 export class AdministratorsService {
 
-  private administratorsgUrl = 'http://localhost:3001/administrators';
+  private administratorsgUrl = environment.apiUrl+'administrators';
   
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
